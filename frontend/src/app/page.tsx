@@ -74,10 +74,21 @@ export default function Page() {
         params.set('category', filters.category.join(','));
         params.set('database', dataBase);
 
-        fetch('http://localhost:3001/?' + params.toString())
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+            router.push('/login');
+            return;
+        }
+
+        fetch('http://localhost:3001/?' + params.toString(), {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
             .then((response) => response.json())
             .then((data) => setVacancies(data))
-            .catch((error) => console.error(error))
+            .catch(() => router.push('/login'))
             .finally(() => setLoading(false))
     }
 
@@ -256,7 +267,8 @@ export default function Page() {
                                     <DropdownMenuRadioGroup value={dataBase} onValueChange={setDataBase}>
                                         <DropdownMenuRadioItem value="mongo">MongoDB</DropdownMenuRadioItem>
                                         <DropdownMenuRadioItem value="postgresql">PostgreSQL</DropdownMenuRadioItem>
-                                        <DropdownMenuRadioItem value="both">MongoDB & PostgreSQL</DropdownMenuRadioItem>
+                                        <DropdownMenuRadioItem value="both">MongoDB &
+                                            PostgreSQL</DropdownMenuRadioItem>
                                     </DropdownMenuRadioGroup>
                                 </DropdownMenuContent>
                             </DropdownMenu>
