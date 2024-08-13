@@ -12,7 +12,7 @@ import {
     DropdownMenuRadioItem
 } from "@/components/ui/dropdown-menu"
 import Vacancy from "@/components/vacancy";
-import {useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 
 interface Filters {
@@ -25,6 +25,7 @@ export default function Page() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const pathname = usePathname()
+    const [loading, setLoading] = useState<boolean>(false);
     const [search, setSearch] = useState<string>(searchParams.get('search') as string || '');
     const [filters, setFilters] = useState<Filters>({
         jobType: (searchParams.get('jobType') as string)?.split(',') || [],
@@ -32,6 +33,7 @@ export default function Page() {
         category: (searchParams.get('category') as string)?.split(',') || [],
     });
     const [dataBase, setDataBase] = useState<string>(searchParams.get('database') as string || 'mongo');
+    const [vacancies, setVacancies] = useState<any[]>([]);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value);
@@ -59,7 +61,29 @@ export default function Page() {
         params.set('database', dataBase);
 
         router.push(pathname + '?' + params.toString());
+        fetchVacancies()
     }
+
+    const fetchVacancies = () => {
+        setLoading(true)
+        const params = new URLSearchParams();
+
+        params.set('search', search);
+        params.set('jobType', filters.jobType.join(','));
+        params.set('salaryRange', filters.salaryRange.join(','));
+        params.set('category', filters.category.join(','));
+        params.set('database', dataBase);
+
+        fetch('http://localhost:3001/?' + params.toString())
+            .then((response) => response.json())
+            .then((data) => setVacancies(data))
+            .catch((error) => console.error(error))
+            .finally(() => setLoading(false))
+    }
+
+    useEffect(() => {
+        fetchVacancies()
+    }, [])
 
     return (
         <div className="flex flex-col min-h-dvh">
@@ -69,7 +93,7 @@ export default function Page() {
                         <h1 className="text-3xl font-bold tracking-tight">Find your next job</h1>
                         <p className="text-lg">Search millions of jobs from thousands of companies.</p>
                     </div>
-                    <form className="w-full max-w-md flex items-center">
+                    <div className="w-full max-w-md flex items-center">
                         <div className="relative flex-1">
                             <Input
                                 type="search"
@@ -86,7 +110,7 @@ export default function Page() {
                         >
                             Search
                         </Button>
-                    </form>
+                    </div>
                 </div>
             </header>
             <main className="container mx-auto py-10 px-4 md:px-6 grid md:grid-cols-[240px_1fr] gap-8">
@@ -99,36 +123,36 @@ export default function Page() {
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="job-type-fulltime"
-                                    checked={filters.jobType.includes('fulltime')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'fulltime')}
+                                    checked={filters.jobType.includes('Full-time')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'Full-time')}
                                 /> Full-time
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="job-type-parttime"
-                                    checked={filters.jobType.includes('parttime')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'parttime')}
+                                    checked={filters.jobType.includes('Part-time')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'Part-time')}
                                 /> Part-time
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="job-type-contract"
-                                    checked={filters.jobType.includes('contract')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'contract')}
+                                    checked={filters.jobType.includes('Contract')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'Contract')}
                                 /> Contract
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="job-type-internship"
-                                    checked={filters.jobType.includes('internship')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'internship')}
+                                    checked={filters.jobType.includes('Internship')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'Internship')}
                                 /> Internship
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="job-type-temporary"
-                                    checked={filters.jobType.includes('temporary')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'temporary')}
+                                    checked={filters.jobType.includes('Temporary')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'jobType', 'Temporary')}
                                 /> Temporary
                             </Label>
                         </div>
@@ -176,36 +200,36 @@ export default function Page() {
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="category-technology"
-                                    checked={filters.category.includes('technology')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'technology')}
+                                    checked={filters.category.includes('Technology')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'Technology')}
                                 /> Technology
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="category-healthcare"
-                                    checked={filters.category.includes('healthcare')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'healthcare')}
+                                    checked={filters.category.includes('Healthcare')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'Healthcare')}
                                 /> Healthcare
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="category-finance"
-                                    checked={filters.category.includes('finance')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'finance')}
+                                    checked={filters.category.includes('Finance')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'Finance')}
                                 /> Finance
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="category-marketing"
-                                    checked={filters.category.includes('marketing')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'marketing')}
+                                    checked={filters.category.includes('Marketing')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'Marketing')}
                                 /> Marketing
                             </Label>
                             <Label className="flex items-center gap-2 font-normal">
                                 <Checkbox
                                     id="category-education"
-                                    checked={filters.category.includes('education')}
-                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'education')}
+                                    checked={filters.category.includes('Education')}
+                                    onCheckedChange={(checked) => handleCheckboxChange(!!checked, 'category', 'Education')}
                                 /> Education
                             </Label>
                         </div>
@@ -238,7 +262,13 @@ export default function Page() {
                             </DropdownMenu>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <Vacancy/>
+                            {!loading && vacancies.map((vacancy) => (<Vacancy key={vacancy._id} {...vacancy}/>))}
+                            {loading && (
+                                <div className="flex items-center justify-center">
+                                    <div
+                                        className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"/>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

@@ -1,27 +1,40 @@
 import {Card, CardContent} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
-import {Button} from "@/components/ui/button";
 
-export default function Vacancy() {
+type Props = {
+    title: string;
+    company: string;
+    location: string;
+    description: string;
+    minSalary: string;
+    maxSalary: string;
+    jobType: string;
+}
+
+function formatNumberWithCommas(number: string): string {
+    return number.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+export default function Vacancy(props: Props) {
 
     return (
         <Card>
             <CardContent className="grid gap-2">
                 <div className="flex items-center justify-between">
-                    <div className="font-semibold text-lg">Software Engineer</div>
-                    <Badge variant="secondary">Full-time</Badge>
+                    <div className="font-semibold text-lg">{props.title}</div>
+                    <Badge variant="secondary">{props.jobType}</Badge>
                 </div>
-                <div className="text-muted-foreground">Acme Inc</div>
+                <div className="text-muted-foreground">{props.company}</div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                    San Francisco, CA
+                    {props.location}
                 </div>
                 <p>
-                    We are looking for an experienced software engineer to join our team and help build our
-                    next-generation platform.
+                    {props.description}
                 </p>
                 <div className="flex items-center justify-between">
-                    <div className="font-semibold">$120,000 - $150,000</div>
-                    <Button variant="outline">Apply</Button>
+                    <div className="font-semibold">
+                        ${formatNumberWithCommas(props.minSalary.toString())} - ${formatNumberWithCommas(props.maxSalary.toString())}
+                    </div>
                 </div>
             </CardContent>
         </Card>

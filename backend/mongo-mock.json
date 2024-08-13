@@ -1,0 +1,662 @@
+[
+  {
+    "title": "Software Engineer",
+    "jobType": "Full-time",
+    "company": "TechCorp",
+    "location": "San Francisco, CA",
+    "description": "Develop and maintain software applications.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Data Analyst",
+    "jobType": "Full-time",
+    "company": "DataCorp",
+    "location": "New York, NY",
+    "description": "Analyze data to provide business insights.",
+    "minSalary": 70000,
+    "maxSalary": 100000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Marketing Coordinator",
+    "jobType": "Full-time",
+    "company": "MarketExperts",
+    "location": "Chicago, IL",
+    "description": "Coordinate and execute marketing campaigns.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Registered Nurse",
+    "jobType": "Full-time",
+    "company": "HealthCarePlus",
+    "location": "Los Angeles, CA",
+    "description": "Provide patient care in a healthcare setting.",
+    "minSalary": 65000,
+    "maxSalary": 90000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "High School Teacher",
+    "jobType": "Full-time",
+    "company": "EducateNow",
+    "location": "Austin, TX",
+    "description": "Teach high school students in various subjects.",
+    "minSalary": 50000,
+    "maxSalary": 70000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Project Manager",
+    "jobType": "Full-time",
+    "company": "BuildTech",
+    "location": "Seattle, WA",
+    "description": "Manage construction and technology projects.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Finance Manager",
+    "jobType": "Full-time",
+    "company": "FinanceWorld",
+    "location": "Boston, MA",
+    "description": "Oversee financial operations and planning.",
+    "minSalary": 90000,
+    "maxSalary": 140000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Content Writer",
+    "jobType": "Part-time",
+    "company": "WriteNow",
+    "location": "Remote",
+    "description": "Create content for blogs and marketing materials.",
+    "minSalary": 30000,
+    "maxSalary": 50000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Software Developer",
+    "jobType": "Full-time",
+    "company": "DevSolutions",
+    "location": "Denver, CO",
+    "description": "Develop software solutions for various clients.",
+    "minSalary": 80000,
+    "maxSalary": 120000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Physician Assistant",
+    "jobType": "Full-time",
+    "company": "MediCare",
+    "location": "Houston, TX",
+    "description": "Assist physicians in patient care.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Digital Marketing Manager",
+    "jobType": "Full-time",
+    "company": "DigitalMedia",
+    "location": "New York, NY",
+    "description": "Manage digital marketing strategies and campaigns.",
+    "minSalary": 70000,
+    "maxSalary": 110000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Accountant",
+    "jobType": "Full-time",
+    "company": "FinancePlus",
+    "location": "San Francisco, CA",
+    "description": "Manage financial records and transactions.",
+    "minSalary": 65000,
+    "maxSalary": 95000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Graphic Designer",
+    "jobType": "Full-time",
+    "company": "CreativeAgency",
+    "location": "Los Angeles, CA",
+    "description": "Design graphics for various media.",
+    "minSalary": 50000,
+    "maxSalary": 80000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Data Scientist",
+    "jobType": "Full-time",
+    "company": "DataTech",
+    "location": "Boston, MA",
+    "description": "Analyze data and develop predictive models.",
+    "minSalary": 100000,
+    "maxSalary": 150000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "HR Manager",
+    "jobType": "Full-time",
+    "company": "PeopleFirst",
+    "location": "Seattle, WA",
+    "description": "Manage human resources and employee relations.",
+    "minSalary": 70000,
+    "maxSalary": 110000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Web Developer",
+    "jobType": "Full-time",
+    "company": "WebWorks",
+    "location": "Chicago, IL",
+    "description": "Develop and maintain websites.",
+    "minSalary": 60000,
+    "maxSalary": 90000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "School Counselor",
+    "jobType": "Full-time",
+    "company": "StudentSupport",
+    "location": "Phoenix, AZ",
+    "description": "Provide guidance and counseling to students.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Clinical Research Coordinator",
+    "jobType": "Full-time",
+    "company": "MedResearch",
+    "location": "San Francisco, CA",
+    "description": "Coordinate clinical research studies.",
+    "minSalary": 65000,
+    "maxSalary": 90000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Mobile App Developer",
+    "jobType": "Full-time",
+    "company": "AppDev",
+    "location": "Austin, TX",
+    "description": "Develop mobile applications for various platforms.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Analyst",
+    "jobType": "Full-time",
+    "company": "FinanceSolutions",
+    "location": "New York, NY",
+    "description": "Analyze financial data and prepare reports.",
+    "minSalary": 65000,
+    "maxSalary": 95000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Marketing Specialist",
+    "jobType": "Part-time",
+    "company": "BrandMasters",
+    "location": "Los Angeles, CA",
+    "description": "Assist with marketing campaigns and strategies.",
+    "minSalary": 40000,
+    "maxSalary": 60000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "IT Support Specialist",
+    "jobType": "Full-time",
+    "company": "TechSupport",
+    "location": "Denver, CO",
+    "description": "Provide IT support to clients and staff.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Nurse Practitioner",
+    "jobType": "Full-time",
+    "company": "HealthFirst",
+    "location": "Houston, TX",
+    "description": "Provide advanced nursing care to patients.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Social Media Manager",
+    "jobType": "Full-time",
+    "company": "Socially",
+    "location": "New York, NY",
+    "description": "Manage social media accounts and campaigns.",
+    "minSalary": 60000,
+    "maxSalary": 90000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Business Analyst",
+    "jobType": "Full-time",
+    "company": "BizTech",
+    "location": "San Francisco, CA",
+    "description": "Analyze business processes and systems.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Technical Writer",
+    "jobType": "Full-time",
+    "company": "DocuTech",
+    "location": "Remote",
+    "description": "Create technical documentation and manuals.",
+    "minSalary": 60000,
+    "maxSalary": 90000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Medical Assistant",
+    "jobType": "Full-time",
+    "company": "HealthCareNow",
+    "location": "Los Angeles, CA",
+    "description": "Assist physicians with patient care.",
+    "minSalary": 35000,
+    "maxSalary": 50000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Marketing Director",
+    "jobType": "Full-time",
+    "company": "MarketLeaders",
+    "location": "Chicago, IL",
+    "description": "Lead marketing strategies and teams.",
+    "minSalary": 90000,
+    "maxSalary": 140000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Network Engineer",
+    "jobType": "Full-time",
+    "company": "NetTech",
+    "location": "Austin, TX",
+    "description": "Design and maintain network systems.",
+    "minSalary": 80000,
+    "maxSalary": 120000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Consultant",
+    "jobType": "Full-time",
+    "company": "FinanceAdvisors",
+    "location": "Boston, MA",
+    "description": "Provide financial consulting services to clients.",
+    "minSalary": 85000,
+    "maxSalary": 130000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Pharmacy Technician",
+    "jobType": "Full-time",
+    "company": "PharmaCare",
+    "location": "Seattle, WA",
+    "description": "Assist pharmacists in dispensing medications.",
+    "minSalary": 40000,
+    "maxSalary": 55000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Sales Manager",
+    "jobType": "Full-time",
+    "company": "SellMore",
+    "location": "New York, NY",
+    "description": "Manage sales teams and strategies.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Systems Administrator",
+    "jobType": "Full-time",
+    "company": "SysAdminCo",
+    "location": "San Francisco, CA",
+    "description": "Manage and maintain IT systems and servers.",
+    "minSalary": 70000,
+    "maxSalary": 100000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Guidance Counselor",
+    "jobType": "Full-time",
+    "company": "StudentSupport",
+    "location": "Boston, MA",
+    "description": "Provide guidance and counseling to students.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Research Scientist",
+    "jobType": "Full-time",
+    "company": "LabTech",
+    "location": "Los Angeles, CA",
+    "description": "Conduct research and experiments in various fields.",
+    "minSalary": 80000,
+    "maxSalary": 120000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Full Stack Developer",
+    "jobType": "Full-time",
+    "company": "DevSolutions",
+    "location": "Seattle, WA",
+    "description": "Develop both front-end and back-end web applications.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Planner",
+    "jobType": "Full-time",
+    "company": "FinanceAdvisors",
+    "location": "Denver, CO",
+    "description": "Create financial plans and strategies for clients.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Marketing Analyst",
+    "jobType": "Full-time",
+    "company": "MarketData",
+    "location": "Houston, TX",
+    "description": "Analyze market trends and data.",
+    "minSalary": 60000,
+    "maxSalary": 90000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "IT Consultant",
+    "jobType": "Full-time",
+    "company": "TechAdvisors",
+    "location": "New York, NY",
+    "description": "Provide IT consulting services to clients.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Clinical Psychologist",
+    "jobType": "Full-time",
+    "company": "MentalHealth",
+    "location": "San Francisco, CA",
+    "description": "Provide psychological counseling and therapy.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Content Strategist",
+    "jobType": "Full-time",
+    "company": "ContentKing",
+    "location": "Los Angeles, CA",
+    "description": "Develop and execute content strategies.",
+    "minSalary": 70000,
+    "maxSalary": 100000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Database Administrator",
+    "jobType": "Full-time",
+    "company": "DataManage",
+    "location": "Chicago, IL",
+    "description": "Manage and maintain databases.",
+    "minSalary": 80000,
+    "maxSalary": 120000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Nursing Assistant",
+    "jobType": "Full-time",
+    "company": "CareAssist",
+    "location": "Houston, TX",
+    "description": "Assist nurses with patient care tasks.",
+    "minSalary": 30000,
+    "maxSalary": 45000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Product Manager",
+    "jobType": "Full-time",
+    "company": "ProductLeads",
+    "location": "San Francisco, CA",
+    "description": "Oversee product development and strategy.",
+    "minSalary": 95000,
+    "maxSalary": 140000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Advisor",
+    "jobType": "Full-time",
+    "company": "WealthAdvisors",
+    "location": "Boston, MA",
+    "description": "Provide financial advice and planning services.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "SEO Specialist",
+    "jobType": "Full-time",
+    "company": "SearchEnginePros",
+    "location": "New York, NY",
+    "description": "Optimize websites for search engine rankings.",
+    "minSalary": 55000,
+    "maxSalary": 85000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "jobType": "Full-time",
+    "company": "SecureTech",
+    "location": "San Francisco, CA",
+    "description": "Protect IT systems and data from cyber threats.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Healthcare Administrator",
+    "jobType": "Full-time",
+    "company": "HealthManage",
+    "location": "Los Angeles, CA",
+    "description": "Oversee the operations of healthcare facilities.",
+    "minSalary": 85000,
+    "maxSalary": 120000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Elementary School Teacher",
+    "jobType": "Full-time",
+    "company": "PrimaryEducation",
+    "location": "Phoenix, AZ",
+    "description": "Teach elementary school students.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "jobType": "Full-time",
+    "company": "BuildTech",
+    "location": "Austin, TX",
+    "description": "Develop and maintain full-stack web applications.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Controller",
+    "jobType": "Full-time",
+    "company": "FinanceCorp",
+    "location": "Denver, CO",
+    "description": "Oversee financial operations and reporting.",
+    "minSalary": 95000,
+    "maxSalary": 140000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "UX Designer",
+    "jobType": "Full-time",
+    "company": "DesignInnovations",
+    "location": "New York, NY",
+    "description": "Design user experiences for web and mobile apps.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Medical Laboratory Technician",
+    "jobType": "Full-time",
+    "company": "LabCare",
+    "location": "Los Angeles, CA",
+    "description": "Perform laboratory tests and procedures.",
+    "minSalary": 50000,
+    "maxSalary": 70000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "High School Science Teacher",
+    "jobType": "Full-time",
+    "company": "EducateNow",
+    "location": "Seattle, WA",
+    "description": "Teach science subjects to high school students.",
+    "minSalary": 50000,
+    "maxSalary": 70000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "jobType": "Full-time",
+    "company": "AIExperts",
+    "location": "San Francisco, CA",
+    "description": "Develop and deploy machine learning models.",
+    "minSalary": 120000,
+    "maxSalary": 160000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Financial Auditor",
+    "jobType": "Full-time",
+    "company": "AuditTech",
+    "location": "New York, NY",
+    "description": "Conduct financial audits and reviews.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Email Marketing Specialist",
+    "jobType": "Full-time",
+    "company": "EmailPros",
+    "location": "Los Angeles, CA",
+    "description": "Manage email marketing campaigns.",
+    "minSalary": 55000,
+    "maxSalary": 85000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "DevOps Engineer",
+    "jobType": "Full-time",
+    "company": "CloudTech",
+    "location": "Austin, TX",
+    "description": "Automate and manage IT infrastructure and operations.",
+    "minSalary": 90000,
+    "maxSalary": 130000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Occupational Therapist",
+    "jobType": "Full-time",
+    "company": "TherapyPlus",
+    "location": "Houston, TX",
+    "description": "Help patients develop or recover daily living skills.",
+    "minSalary": 70000,
+    "maxSalary": 100000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Librarian",
+    "jobType": "Full-time",
+    "company": "CityLibrary",
+    "location": "Phoenix, AZ",
+    "description": "Manage library resources and assist patrons.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Education"
+  },
+  {
+    "title": "Cloud Engineer",
+    "jobType": "Full-time",
+    "company": "CloudTech",
+    "location": "San Francisco, CA",
+    "description": "Design and manage cloud-based systems.",
+    "minSalary": 95000,
+    "maxSalary": 140000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Investment Banker",
+    "jobType": "Full-time",
+    "company": "FinanceWorld",
+    "location": "New York, NY",
+    "description": "Provide investment banking services to clients.",
+    "minSalary": 120000,
+    "maxSalary": 180000,
+    "jobCategory": "Finance"
+  },
+  {
+    "title": "Public Relations Manager",
+    "jobType": "Full-time",
+    "company": "PRPros",
+    "location": "Los Angeles, CA",
+    "description": "Manage public relations strategies and campaigns.",
+    "minSalary": 75000,
+    "maxSalary": 110000,
+    "jobCategory": "Marketing"
+  },
+  {
+    "title": "Application Developer",
+    "jobType": "Full-time",
+    "company": "AppDev",
+    "location": "Austin, TX",
+    "description": "Develop applications for various platforms.",
+    "minSalary": 80000,
+    "maxSalary": 120000,
+    "jobCategory": "Technology"
+  },
+  {
+    "title": "Clinical Nurse",
+    "jobType": "Full-time",
+    "company": "HealthCarePlus",
+    "location": "San Francisco, CA",
+    "description": "Provide clinical nursing care to patients.",
+    "minSalary": 70000,
+    "maxSalary": 100000,
+    "jobCategory": "Healthcare"
+  },
+  {
+    "title": "Kindergarten Teacher",
+    "jobType": "Full-time",
+    "company": "EarlyLearn",
+    "location": "Boston, MA",
+    "description": "Teach and care for kindergarten students.",
+    "minSalary": 45000,
+    "maxSalary": 65000,
+    "jobCategory": "Education"
+  }
+]
