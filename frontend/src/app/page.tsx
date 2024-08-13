@@ -92,6 +92,11 @@ export default function Page() {
             .finally(() => setLoading(false))
     }
 
+    const logout = () => {
+        localStorage.clear()
+        router.push('/login')
+    }
+
     useEffect(() => {
         fetchVacancies()
     }, [])
@@ -251,6 +256,13 @@ export default function Page() {
                         onClick={applyFilters}
                     >
                         Apply Filters
+                    </Button>
+                    <Button
+                        variant="outline"
+                        className="w-full"
+                        onClick={logout}
+                    >
+                        Logout
                     </Button>
                 </div>
                 <div className="flex flex-col gap-6">
